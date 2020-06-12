@@ -4,9 +4,22 @@ import time
 # import ramdom
 
 
+WIDTH = 800
+HEIGHT = 600
+
+def imagen(filename, transparent=False):
+	try: image = pygame.image.load(filename)
+except pygame.error, message:
+	raise SystemExit, message
+image = image.convert()
 
 
 
+
+
+
+
+'''
 pygame.init()
  
 pantalla = pygame.display.set_mode((800,600))
@@ -21,3 +34,4 @@ while True:
     pantalla.blit(imagen,(100,100))
     pygame.display.update()
 
+'''
